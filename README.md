@@ -5,7 +5,6 @@
 ## Table des matières
 * [Introduction](#Introduction)
 * [Les fonctionnalités de la plateforme](#Les fonctionnalités de la plateforme)
-* []()
 
  
 ### Introduction
