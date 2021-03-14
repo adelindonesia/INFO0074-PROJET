@@ -4,7 +4,7 @@
 
 ## Table des matières
 * [Introduction](#Introduction)
-* [Les fonctionnalités de la plateforme](#Les fonctionnalités de la plateforme)
+* [Les fonctionnalités](#Les fonctionnalités)
 
  
 ### Introduction
@@ -13,7 +13,7 @@ en ligne et récupérer et payer les produits au magasin avec un délai court et
 perte de colis. Cette pratique permet aux clients de faire leurs courses quand ils veulent et 
 avoir un contact face-à-face avec les commerçants et vice-versa.
 
-### Les fonctionnalités de la plateforme
+### Les fonctionnalités 
 * permettre aux commerçants et clients de se connecter pour faire les opérations suivantes.
 * permettre aux commerçants d’ajouter/modifier/supprimer leurs produits.
 * permettre aux commerçants de préparer les commandes pour les clients, livrer les
