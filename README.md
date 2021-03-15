@@ -24,4 +24,4 @@ Permettre aux commerçants et clients de se connecter pour faire les opérations
 ###
 Pour ce projet, on a besoin de maîtriser HTML, CSS, PHP et MySQL.
 
-L'énoncé du travail est disponible [ici](./Clicketcollect2020-2021.pdf)
+L'énoncé du travail est disponible [ici](./Clicketcollect2020-2021.pdf).
