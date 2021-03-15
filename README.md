@@ -14,7 +14,7 @@ perte de colis. Cette pratique permet aux clients de faire leurs courses quand i
 avoir un contact face-à-face avec les commerçants et vice-versa.
 
 ### Fonctionnalités 
-* permettre aux commerçants et clients de se connecter pour faire les opérations suivantes.
+Permettre aux commerçants et clients de se connecter pour faire les opérations suivantes :
 * permettre aux commerçants d’ajouter/modifier/supprimer leurs produits.
 * permettre aux commerçants de préparer les commandes pour les clients, livrer les
   commandes et accepter le payement.
@@ -22,5 +22,5 @@ avoir un contact face-à-face avec les commerçants et vice-versa.
 * permettre aux clients de faire ses achats et collecter leurs produits au magasin.
 
 ###
-Pour ce projet, on a besoin de métriser HTML, CSS, PHP et MySQL 
+Pour ce projet, on a besoin de maîtriser HTML, CSS, PHP et MySQL.
 
