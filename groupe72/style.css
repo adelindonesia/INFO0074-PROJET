@@ -1,0 +1,252 @@
+/*Remove all underline due to link*/
+* {
+	text-decoration: none;
+}
+
+header {
+	/*color:white*/
+	background-color: #fff;
+	/*all the way from left to right*/
+	width: 100%; 
+	height: 50px;
+}
+
+header .header-brand{
+	width: 120px;
+	height: 60px;
+	display: block;
+	margin: 0 auto;
+}
+
+header nav ul {
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+header nav ul li {
+	display: inline-block;
+	float: left;
+	list-style: none;
+	padding: 0 16px;
+	text-transform: uppercase;
+}
+
+header nav ul li a {
+	font-family: Catamaran;
+	font-size: 22px;
+	color: #111;
+}
+
+@media only screen and (min-width: 1000px){
+	header .header-brand {
+		margin: 31px 0px;
+		text-align: left;
+		line-height: 38px;
+		padding: 0px 20px 0px 40px;
+		border-right: 3px solid #111;
+		float: left;
+	}
+
+	header nav ul {
+	margin: 50px 0px 0px 20px;
+	float: left;
+	}
+
+
+	header nav ul li a {
+	line-height: 30px;
+	}
+}
+
+/*Index*/
+
+.index-banner {
+	width: 100%;
+	height: calc(100vh - 100px);
+	background-image: url('multimedia/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+}
+
+.vertical-center {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.index-banner h2 {
+	font-family: Catamaran;
+	font-size: 50px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	text-shadow: 8px 8px 7px #111;
+}
+
+.index-links div {
+	margin: 16px 16px 0px;
+	width: calc(100% - 32px);
+	height: 100px;
+	background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+	font-family: Catamaran;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 100px;
+	color: #111;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px){
+	.wrapper {
+		width: 1400px;
+		margin: 0 auto;
+	}
+
+	.index-banner {
+		height: 450px;
+	}
+
+	.index-links{
+		padding-bottom: 10px;
+		overflow: hidden;
+	}
+
+	/*.index-links div {
+		margin:10px 10px 10px;
+		height: 230px;
+		background-color: #f2f2f2;
+		float: left;
+	}
+
+	.index-boxlink-square {
+		width: calc(25% - 5px) !important;
+
+	}
+
+	.index-boxlink-rectangle {
+		width: calc(50% - 5px) !important;
+	}*/
+}
+
+/*footer*/
+
+footer {
+	width: calc(100% - 80px);
+	padding: 40px 40px;
+	margin-top: 20px;
+	background-color: #111;
+	overflow: hidden;
+}
+
+footer ul {
+	width: fit-content;
+	float: left;
+	padding-left: 20px;
+}
+
+footer ul li {
+	display: block;
+	list-style: none;;
+}
+
+footer ul li a {
+	font-family: Catamaran;
+	font-size: 24px;
+	color: #fff;
+	line-height: 60px;
+}
+
+.footer-sm {
+	width: 60px;
+	float: right;
+}
+
+.footer-sm img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#panier {
+    text-align: center;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
+}
+
+.products-container {
+    max-width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+} 
+
+.product-header {
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.product-title {
+    width : 45%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.price {
+    width : 15%; 
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.total {
+    width : 10%;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+ion-icon {
+    cursor: pointer;
+    font-size: 30px;
+    color: blue;
+}
+
+.paiement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1000px){
+
+}
