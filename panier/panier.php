@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php include("database.php"); ?>  
+<?php 
+session_start();
+$panier = $db->prepare('SELECT * FROM panier WHERE id_panier = ?');
+$panier->execute(array($_GET['id_membre']));
+$panier = $panier->fetch();
+
+?>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -10,7 +18,7 @@
 	
 	<body>
 			<header>
-				<a href="accueil.php" ><img src="multimedia/Logo.jpg" alt="Logo : Groupe 72" class="header-brand"/></a>
+				<a href="index.php" ><img src="multimedia/Logo.jpg" alt="Logo : Groupe 72" class="header-brand"/></a>
 				<nav>
 					<ul>
 						<li><a href="./produit.php">Produits</a></li>
@@ -41,26 +49,46 @@
                         </section>
                   
                 
-                   <section class="product-container">
+                
+                
+                    <?php 
+                    
+                    $panierr = $db->query('SELECT * FROM panier');
+                    while($products = $panierr->fetch()) {                        
+                        
+                    $bloc = '<section class="product-container">
                     <div class="product-header">
                     <div class="product-title">
-                    <ion-icon name="trash"></ion-icon>
-				    <img  src="multimedia/biere.jpg" alt="produit" width="150px" height="150px"/>
-                    </div>
-                    <div class="price">6€</div>
-                    <div class="quantity"><ion-icon name="caret-back"></ion-icon>1<ion-icon name="caret-forward"></ion-icon>
-                        </div>
-                    <div class="total">6€
-            
-   
-                        </div>
-                    </div>
-                    </section> 
                     
+                    <a href="deleteProduct.php?'."id_membre=".$_GET['id_membre'].'"'.'><ion-icon name="trash"></ion-icon></a>';
+                    
+                    $bloc2 = '  
+                    <img  src="multimedia/'.$products["nom_fichier"].'"'.'alt="produit" width="150px" height="150px"/> <span>'.$products['nom_produit']."</span>".'
+                    </div> 
+                    <div class="price">'.$products["prix"]."€"."</div>".'<div class="quantity"><ion-icon name="caret-back"></ion-icon>'.$products["quantite"].'<ion-icon name="caret-forward"></ion-icon>
+                        </div>
+                    <div class="total">'.$products["total"]."€"."</div>
+                    </div>
+                    </section>";
+                        
+                    $allbloc = $bloc.$bloc2;
+                    echo $allbloc;
+                    }
+                    
+                
+                    ?>
+                    
+                
+                    <form action="commande.php">
+                    <div class="button">
+                    <input type="submit" value="Passer la commande" name="valider">
+                    </div>
+                    </form>
                     <div class="paiement">
                     <img src="multimedia/paiement-securise.webp" alt="mode-paiement"/ width="400px" height="200px">
                     </div>
-                  
+                    
+                    
 					
 				
 			</main>

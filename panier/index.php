@@ -10,13 +10,13 @@
 	<body>
 			<!-- Logo, navigation bar -->
 			<header>
-				<a href="accueil.php" ><img src="multimedia/Logo.jpg" alt="Logo : Groupe 72" class="header-brand"/></a>
+				<a href="index.php" ><img src="multimedia/Logo.jpg" alt="Logo : Groupe 72" class="header-brand"/></a>
 				<nav>
 					<ul>
 						<li><a href="./produit.php">Produits</a></li>
 						<li><a href="./contactez_nous.php">Contactez-nous</a></li>
 						<li><a href="./login.php">Login</a></li>
-						<li><a href="./panier.php">Panier</a></li>
+						<li><a href="./panier.php?id_membre=1">Panier</a></li>
 					</ul>
 						<!-- Mettre une barre de recherche ? -->
 				</nav>
@@ -35,7 +35,7 @@
 								<h3>Produits</h3>
 							</div>
 						</a>
-						<a href="./panier.php">
+						<a href="./panier.php?id_membre=1">
 							<div class="index-boxlink-rectangle">
 								<h3>Panier</h3>
 							</div>
