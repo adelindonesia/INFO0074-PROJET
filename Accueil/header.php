@@ -6,31 +6,37 @@
 		<title>Accueil</title>
 		<link rel="stylesheet" type="text/css" href="accueil.css">
 	</head>
-	<!--Tuto :https://www.youtube.com/watch?v=kbLfWKGVsMQ&ab_channel=DaniKrossing-->
 	<body>
 		<!-- Logo, navigation bar -->
 		<header>
 			<a href="accueil.php" ><img src="multimedia/Logo.jpg" alt="Logo : Groupe 72" class="header-brand"/></a>
 			<nav>
 				<ul>
-					<li><a href="./login.php"><!--<img src="./multimedia/user.png" class="user">-->Utilisateur</a>
+					<li><a href="./login.php">Utilisateur</a>
 						<ul>
-							<li>
-								<a href="">Connexion</a>
-							</li>
-							<li>
-								<a href="mon_compte.php">Mon compte</a>
-							</li>
-							<li>
-								<a href="">Contactez-nous</a>
-							</li>
+							<?php
+								if(isset($_SESSION["client_id"])) /*Il faut mettre entre les crochets user exists and have loged in*/ {
+									echo "<li>
+											<a href='mon_compte.php'>Mon profil</a>
+										</li>";
+									echo "<li>
+											<a href='includes/signout.php'>Déconnexion</a>
+										</li>";
+								}
+								else {
+									echo "<li>
+											<a href=''>Connexion</a>
+										</li>";
+								}
+							?>
+							<li><a href="">Contactez-nous</a></li>
 						</ul>
 					</li>
-					<li><a href="./panier.php"><!--<img src="./multimedia/cart-icon.png" class="cart">-->Panier</a></li>
+					<li><a href="./panier.php">Panier</a></li>
 					<li><a href="./produit.php">Produits</a></li>
 				</ul>
 
-				<!-- Mettre une barre de recherche ? -->
+				<!-- La barre de recherche -->
 				<form action="search.php" method="POST">
 					<input type="text" name="search" placeholder="search">
 					<button type="submit" name="submit-search">Search</button>
