@@ -6,6 +6,15 @@ $panier = $db->prepare('SELECT * FROM panier WHERE id_panier = ?');
 $panier->execute(array($_GET['id_membre']));
 $panier = $panier->fetch();
 
+
+if($panier['quantite'] < 1) {
+    $panier = $db->prepare("SELECT * FROM panier WHERE id_membre = ?");
+    $panier->execute(array($_GET['id_membre']));
+    $panier = $panier->fetch();
+    
+    $deleted = $db->prepare("DELETE FROM panier WHERE nom_produit = ?");
+    $deleted->execute(array($panier['nom_produit']));
+}
 ?>
 <html>
 	<head>
@@ -65,7 +74,7 @@ $panier = $panier->fetch();
                     $bloc2 = '  
                     <img  src="multimedia/'.$products["nom_fichier"].'"'.'alt="produit" width="150px" height="150px"/> <span>'.$products['nom_produit']."</span>".'
                     </div> 
-                    <div class="price">'.$products["prix"]."€"."</div>".'<div class="quantity"><ion-icon name="caret-back"></ion-icon>'.$products["quantite"].'<ion-icon name="caret-forward"></ion-icon>
+                    <div class="price">'.$products["prix"]."€"."</div>".'<div class="quantity">'.'<a href="ajoutQuantite.php?id_membre='.$_GET['id_membre'].'"'.'><ion-icon name="caret-back"></ion-icon></a>'.$products["quantite"].'<a href="ajoutQuantite.php?id_membre='.$_GET['id_membre'].'">'.'<ion-icon name="caret-forward"></ion-icon>'.'</a>'.'
                         </div>
                     <div class="total">'.$products["total"]."€"."</div>
                     </div>
