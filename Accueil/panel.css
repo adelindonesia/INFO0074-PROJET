@@ -1,0 +1,115 @@
+* {
+	margin : 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.grid {
+	display : grid;
+	grid-template-columns: 2fr 500px 500px 1fr;
+	grid-template-rows: 82px 1fr 2fr 1fr;
+	grid-template-areas : 
+	"title title title title"
+	"header header header header"
+	"sidebar content content ."
+	"footer footer footer footer"
+	;
+}
+
+.title {
+	grid-area: title;
+	border-bottom: solid;
+	height: 80px;
+}
+
+.header-brand {
+	width: 100px;
+	height: 50px;
+	margin: 20px 0px;
+	padding: 0px 10px 0px 20px;
+	border-right: 3px solid #111;
+	float: left;
+}
+
+.title nav ul li {
+	display: inline-block;
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.title nav ul li a {
+	display: block;
+	font-family: Catamaran;
+	font-size: 20px;
+	color: #111;
+	padding: 45px 45px;
+	margin: -10px 0;
+}
+
+.title nav form {
+	line-height: 55px;
+	padding: 15px 30px 0px 0px;
+	float: right;
+}
+
+.title input {
+	padding: 0 20px; 
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+}
+
+.title button {
+	width: 100px;
+	height: 35px;
+	font-size: 20px;
+}
+
+.header {
+	grid-area: header;
+	background-image: url('multimedia/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-bottom: solid;
+}
+
+.user {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 200px;
+	height: 200px;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	padding-top: 30px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  border: solid;
+  background-color: #F28E1C;
+  display: block;
+
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+}

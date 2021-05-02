@@ -13,6 +13,7 @@
 				<nav>
 					<ul>
 						<li><a href="accueil.php">Acceuil</a></li>
+						<li><a href="">Contactez-nous</a></li>	
 						<form action="search.php" method="POST">
 							<input type="text" name="search" placeholder="search">
 							<button type="submit" name="submit-search">Search</button>
@@ -30,8 +31,8 @@
 				<nav>
 	  				<ul>
 	    				<li><a href="mon_profil.php">Mon compte</a></li>
-	    				<li><a href="">Gérer les produits</a></li>
-	    				<li><a href="">Gérer les clients</a></li>
+	    				<li><a href="">Produits</a></li>
+	    				<li><a href="">Panier</a></li>
 	   					<li><a href="">Déconnexion</a></li>
 	  				</ul>
 				</nav>
