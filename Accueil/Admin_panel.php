@@ -3,52 +3,45 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-		<title>Admin</title>
-		<link rel="stylesheet" type="text/css" href="accueil.css">
+		<title>Client</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<header>
-			<a href="accueil.php" ><img src="multimedia/Logo.jpg" alt="Logo : Groupe 72" class="header-brand"/></a>
-			<nav>
-				<form action="" method="POST">
-					<button type="" name="">sign out</button> 
-				</form>
-			</nav>
-		</header>
-		<main>
-			<section class="index-banner">
-				<div class="vertical-center">
-					<h2>Bonjour!
-						<p>
-							Bienvenu dans le panneau d'administration
-						</p>
-					</h2>
-				</div>
-			</section>
-			<!--Sous banner-->
-			<div class="wrapper">
-				<section class="index-links">
-					<a href="">
-						<div>
-							<h3>Gérer les clients</h3>
-						</div>
-					</a>
-					<a href="">
-						<div>
-							<h3>Gérer les Produits</h3>
-						</div>
-					</a>
-					<a href="">
-						<div>
-							<h3>Gérer les commandes</h3>
-						</div>
-					</a>
-				</section>
+		<div class="grid">
+			<div class="title">
+				<a href="accueil.php" ><img src="multimedia/Logo.jpg" alt="Logo : Groupe 72" class="header-brand"/></a>
+				<nav>
+					<ul>
+						<li><a href="accueil.php">Acceuil</a></li>
+						<form action="search.php" method="POST">
+							<input type="text" name="search" placeholder="search">
+							<button type="submit" name="submit-search">Search</button>
+						</form>
+					</ul>
+				</nav>
 			</div>
-		</main>
-	<?php 
-		include'footer.php';
-	?>
+			<div class="header">
+				<img src="multimedia/user1.png" alt="image user" class="user">
+				<center>
+					<h1>Mon compte</h1>
+				</center>
+			</div>
+			<div class="sidebar">
+				<nav>
+	  				<ul>
+	    				<li><a href="mon_profil.php">Mon compte</a></li>
+	    				<li><a href="">Gérer les produits</a></li>
+	    				<li><a href="">Gérer les clients</a></li>
+	   					<li><a href="">Déconnexion</a></li>
+	  				</ul>
+				</nav>
+			</div>		
+			<div class="content">Contenu</div>
+			<div class="footer">
+				<?php
+					include 'footer.php'
+				?>
+			</div>
+		</div>
 	</body>
 </html>
-
