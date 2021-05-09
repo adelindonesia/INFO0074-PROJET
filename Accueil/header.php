@@ -1,3 +1,8 @@
+<?php
+	session_start()
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,17 +20,17 @@
 					<li><a href="./login.php">Utilisateur</a>
 						<ul>
 							<?php
-								if(isset($_SESSION["client_id"])) /*Il faut mettre entre les crochets user exists and have loged in*/ {
+								if(isset($_SESSION["email"])) {
 									echo "<li>
 											<a href='mon_compte.php'>Mon profil</a>
 										</li>";
 									echo "<li>
-											<a href='includes/signout.php'>Déconnexion</a>
+											<a href='signout.php'>Déconnexion</a>
 										</li>";
 								}
 								else {
 									echo "<li>
-											<a href=''>Connexion</a>
+											<a href='login.php'>Connexion</a>
 										</li>";
 								}
 							?>

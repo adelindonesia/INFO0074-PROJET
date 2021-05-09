@@ -12,6 +12,9 @@
 	$db = "groupe_72.sql";
 
 	$con = mysqli_connect($server,$username,$passeword,$db);
+	if (mysqli_connect_errno()){
+		echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	}
 
 	if(isset($_POST['submit-search'])){
 		$search = mysqli_real_escape_string($con, $_POST['search']);
