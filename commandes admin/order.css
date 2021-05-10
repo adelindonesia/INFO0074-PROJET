@@ -1,0 +1,297 @@
+/*Remove all underline due to link*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+/*Navigation bar*/
+
+header {
+	/*color:white*/
+	background-color: #fff;
+	/*all the way from left to right*/
+	width: 100%; 
+	height: 50px;
+}
+
+header .header-brand {
+	width: 200px;
+	height: 100px;
+	display: block;
+	margin: 20px auto;
+}
+
+header nav ul {
+	display: block;
+	margin: 20px auto;
+	width: fit-content;
+}
+
+header nav ul li {
+	display: inline-block;
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+}
+
+header nav ul li a {
+	font-family: Catamaran;
+	font-size: 22px;
+	color: #111;
+	padding: 22px 14px;
+}
+
+header nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 0 0 10px 10px;
+	padding: 20px;
+}
+
+header nav ul li:hover ul {
+	display: block;
+}
+
+header nav ul li ul li {
+	width: 250px;
+}
+
+header nav ul li ul li a {
+	padding: 4px 7px;
+}
+
+header nav ul li ul li a:hover {
+	background-color: #f4f4f4;
+}
+
+/*nav .user {
+	width: 35px;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+}	
+
+nav .cart {
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin: 0 auto;
+}*/
+
+
+header nav form {
+	line-height: 100px;
+	padding: 15px 0px 0px 0px;
+	float: right;
+}
+
+input {
+	padding: 0 20px; 
+	width: 300px;
+	height: 40px;
+	font-size: 22px;
+}
+
+button {
+	width: 100px;
+	height: 44px;
+	font-size: 22px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+	header .header-brand {
+	width: 120px;
+	height: 60px;
+	margin: 31px 0px;
+	padding: 0px 20px 0px 40px;
+	border-right: 3px solid #111;
+	float: left;
+	}
+
+	header nav ul {
+	float: left;
+	margin: 0px;
+	}
+
+	header nav ul li {
+	float: left;
+	}
+
+	header nav ul li a {
+	display: block;
+	font-size: 24px;
+	padding: 50px 50px;
+	}
+
+	header nav ul li ul li {
+	width: 250px;
+	}
+
+	header nav ul li ul li a {
+	padding: 8px 14px;
+	}
+
+	header nav form {
+	padding: 15px 100px 0px 0px;
+	}
+}
+
+
+/*Index*/
+
+.index-banner {
+	width: 100%;
+	height: calc(100vh - 100px);
+	background-image: url('multimedia/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+}
+
+.vertical-center {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.index-banner h2 {
+	font-family: Catamaran;
+	font-size: 50px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	text-shadow: 8px 8px 7px #111;
+}
+
+.index-links div {
+	margin: 16px 16px 0px;
+	width: calc(100% - 32px);
+	height: 100px;
+	background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+	font-family: Catamaran;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 100px;
+	color: #111;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px){
+	.wrapper {
+		width: 1500px;
+		margin: 0 auto;
+	}
+
+	.index-banner {
+		height: 450px;
+	}
+
+	/*.index-links{
+		padding-bottom: 10px;
+		overflow: hidden;
+	}
+
+	.index-links div {
+		margin:10px 10px 10px;
+		height: 300px;
+		background-color: #f2f2f2;
+		float: left;
+	}
+
+	.index-boxlink-square {
+		width: calc(25% - 5px) !important;
+
+	}
+
+	.index-boxlink-rectangle {
+		width: calc(50% - 5px) !important;
+	}*/
+}
+
+/*Bar de recherche*/
+.produit-container {
+	width: 1400px;
+	margin: 0 auto;
+	padding: 40px 40px;
+	background-color: #f2f2f2;
+}
+
+.produit_box {
+	padding-bottom: 30px;
+	width: 100%
+}
+
+/*footer*/
+
+footer {
+	width: calc(100% - 80px);
+	padding: 40px 40px;
+	margin-top: 20px;
+	background-color: #111;
+	overflow: hidden;
+}
+
+footer ul {
+	width: fit-content;
+	float: left;
+	padding-left: 20px;
+}
+
+footer ul li {
+	display: block;
+	list-style: none;;
+}
+
+footer ul li a {
+	font-family: Catamaran;
+	font-size: 24px;
+	color: #fff;
+	line-height: 60px;
+}
+
+.footer-sm {
+	width: 60px;
+	float: right;
+}
+
+.footer-sm img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+table.list{
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;	
+}
+
+th{
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	background-color: #b38600;
+	color:white;
+	text-shadow: 6px 6px 5px #111;
+	font-size: 32px;
+	font-family: "Trebuchet MS";
+}
+
+td.list{
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	font-size: 20px;
+	font-family: "Trebuchet MS";
+}
+
+tr.list:hover {
+	background-color: #ffecb3;
+}
