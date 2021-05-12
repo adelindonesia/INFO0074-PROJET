@@ -1,0 +1,106 @@
+.contenant{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+}
+
+ul.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #916e8f;
+	background-color:#916e8f;
+}
+
+li.menu {
+	float: left;
+}
+
+li.menu a {
+	display: block;
+	color: 	#222;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li.menu a.active{
+	color: white;
+	background-color:#916e8f;
+}
+
+li.menu a:hover{
+	background-color: #eee
+}
+
+ul.menu_s{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+li.menu_s {
+	float: right;
+}
+
+li.menu_s a {
+	display: block;
+	color: #777;
+	text-align: center;
+	padding: 8px 10px;
+	text-decoration: none;
+	background-color:#916e8f;
+}
+
+li.menu_s a:hover{
+	background-color: #ddd
+}
+
+li.menu_s a.active{
+	color: white;
+	background-color:#deb887;
+}
+
+.alert{
+	color:red;
+}
+
+table.list{
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;	
+}
+
+th{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  background-color:	#916e8f;
+  color:white;
+}
+
+td.list{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tr.list:hover {
+	background-color:#916e8f;
+}
+
+a:link {
+  color: gray;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: blue;
+}
